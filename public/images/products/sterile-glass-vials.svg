@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="bgVials" x1="0" y1="0" x2="320" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#164E63"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="110" y1="80" x2="210" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="1" stop-color="#FDBA74"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="32" fill="url(#bgVials)"/>
+  <g stroke="rgba(255,255,255,0.8)" stroke-width="4" fill="rgba(15,23,42,0.35)">
+    <rect x="90" y="70" width="40" height="120" rx="12"/>
+    <rect x="140" y="70" width="40" height="120" rx="12"/>
+    <rect x="190" y="70" width="40" height="120" rx="12"/>
+  </g>
+  <rect x="100" y="110" width="20" height="60" rx="6" fill="url(#glass)"/>
+  <rect x="150" y="110" width="20" height="60" rx="6" fill="url(#glass)"/>
+  <rect x="200" y="110" width="20" height="60" rx="6" fill="url(#glass)"/>
+  <rect x="85" y="60" width="160" height="20" rx="10" fill="rgba(255,255,255,0.45)"/>
+</svg>

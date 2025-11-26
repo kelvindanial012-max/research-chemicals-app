@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220" fill="none">
+  <defs>
+    <linearGradient id="bgBuffer" x1="0" y1="0" x2="320" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="120" x2="320" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" rx="32" fill="url(#bgBuffer)"/>
+  <path d="M0 150C30 130 80 130 110 150C140 170 180 170 210 150C240 130 290 130 320 150V220H0V150Z" fill="url(#wave)" opacity="0.9"/>
+  <path d="M60 150C90 135 120 135 150 150C180 165 220 165 260 150" stroke="rgba(15,23,42,0.35)" stroke-width="6" stroke-linecap="round"/>
+  <rect x="128" y="40" width="64" height="40" rx="12" fill="rgba(255,255,255,0.85)"/>
+  <rect x="120" y="70" width="80" height="100" rx="20" fill="rgba(15,23,42,0.5)" stroke="rgba(255,255,255,0.6)" stroke-width="4"/>
+</svg>

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --background: #030915;
+  --foreground: #f5f7ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ocean: #0d2c5c;
+  --color-sky: #1e4dc3;
+  --color-sand: #0b1424;
+  --color-slate: #152037;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-roboto);
+}
+
+body {
+  background-color: #01030b;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(59, 91, 172, 0.12),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 15%, rgba(28, 55, 105, 0.25), transparent 55%),
+    linear-gradient(180deg, #01030b 0%, #050d1e 60%, #01030b 100%);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), "Inter", "Roboto", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), var(--font-sans);
+}
+
+section {
+  scroll-margin-top: 84px;
+}
+
+.hero-pattern {
+  background-color: #040c1d;
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 10%, rgba(107, 139, 255, 0.35), transparent 40%),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.04),
+      rgba(255, 255, 255, 0.04) 10px,
+      transparent 10px,
+      transparent 22px
+    );
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee-left {
+  animation-name: marquee-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate-marquee-right {
+  animation-name: marquee-right;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 1.8s ease-in-out infinite;
+}
